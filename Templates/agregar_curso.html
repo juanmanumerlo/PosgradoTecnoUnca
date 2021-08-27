@@ -11,11 +11,43 @@
         </header>
         <nav><a href="index.html">Inicio</a></p><p>Autoridades</p><p>Cursos</p><p>Contacto</p></nav>
         <section>
-            <h2>Detalles del curso</h2>
+            <p>Para agregar un nuevo curso, complete el siguiente formulario</p>
             <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eaque magni eligendi autem rem nostrum. Animi necessitatibus, cum amet eius totam iste temporibus, dolores quasi, quas perspiciatis sunt dignissimos. Quisquam.
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Datos Básicos</legend>
+                        <label for="nombre_curso">Nombre del Curso</label>
+                        <input type="text" name="nombre_curso" id="nombre_curso" size="50" maxlength="250" required/><br><br>
+                        <label for="objetivo_curso">Objetivo del Curso</label>
+                        <input type="text" name="objetivo_curso" id="objetivo_curso" size="50" maxlength="250"required /><br><br>
+                        <label for="modalidad">Modalidad</label>
+                        <select name="modalidad" id="modalidad" required>
+                            <option value="presencial">Presencial</option>
+                            <option value="virtual">Virtual</option>
+                            <option value="mixto">Mixto</option>
+                        </select><br><br>
+                        <label for="docentes">Docentes que dictaran el curso</label>
+                        <input type="text" name="docentes" id="docentes" size="50" maxlength="250" required><br><br>
+                        <label for="honorarios">Honorarios</label>
+                        <input type="text" name="honorarios" id="honorarios" size="50" maxlength="250" required><br><br>
+                        <label for="duracion">Duracion del curso</label>
+                        <input type="number" name="duracion" id="duracion" size="4" maxlength="4" required>
+                        <label for=""> horas cátedra</label><br><br>
+                        <label for="fecha_inicio">Fecha de Inicio</label>
+                        <input type="date" name="fecha_inicio" id="fecha_inicio" required /><br><br>
+                        <label for="fecha_nacimiento">Fecha de Finalizacion</label>
+                        <input type="date" name="fecha_finalizacion" id="fecha_finalizacion" required /><br><br>
+                        <label for="cant_min_alumnos">Cantidad Mínima de Alumnos</label>
+                        <input type="number" name="cant_min_alumnos" id="cant_min_alumnos" size="3" maxlength="3" required><br><br>
+                        <label for="cant_max_alumnos">Cantidad Máxima de Alumnos</label>
+                        <input type="number" name="cant_max_alumnos" id="cant_max_alumnos" size="3" maxlength="3" required><br><br>
+                        <label for="precio_curso">Precio del curso</label>
+                        <input type="number" name="precio_curso" id="precio_curso" size="6" maxlength="6" required><br><br>
+                        <input type="submit" name="confirmar" value="Proponer">
+                        <input type="reset" name="cancelar" value="Cancelar">
+                    </fieldset>
+                </form>
             </div>
-            <div><a href="inscripcion.html">Inscribirse</a></div>
         </section>
     </body>
 </html>
